@@ -1,2 +1,17 @@
-<app-orbit-list [satellites]="sourceList"></app-orbit-list>
+<app-orbit-list [satellites]="displayList"></app-orbit-list>
+
+<div class="search-form">
+    <input type="text" name="searchTerm" (keyup.enter)="search(searchTerm.value)" />
+    <button (click)="search(searchTerm.value)">Search</button>
+</div>
+
+<script>
+       window.addEventListener("load", function() {
+      let form = document.querySelector("form");
+      form.addEventListener("submit", function(event) {
+        let searchTerm = document.querySelector("input[name=searchTerm]");
+        return searchTerm;
+      });
+   });
+</script>
 
