@@ -24,9 +24,7 @@ export class OrbitCountsComponent implements OnInit {
       return count;
     } else {
       for (let i = 0; i < this.satellites.length; i++){
-        this.satellites[i].type.toLowerCase();
-        satelliteType.toLowerCase();
-          if(this.satellites[i].type === satelliteType){
+          if(this.satellites[i].type.toLowerCase() === satelliteType.toLowerCase()){
             count++ ; 
           }
       }
