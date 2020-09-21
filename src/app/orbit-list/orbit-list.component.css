@@ -18,6 +18,10 @@ table {
   font-family: 'Courier New', Courier, monospace;
 }
 
+tr:nth-child(even) { 
+    background: #FFFFF0;
+} 
+
 .header-row {
     background: #34495E;
     color: #fff
