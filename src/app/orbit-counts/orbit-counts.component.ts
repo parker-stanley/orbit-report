@@ -19,13 +19,11 @@ export class OrbitCountsComponent implements OnInit {
 
   count(satelliteType:string){
     let count = 0;
-    satelliteType.toLowerCase();
-    if (satelliteType == 'total'){
+    if (satelliteType.toLowerCase() == 'total'){
       count = this.satellites.length;
       return count;
     } else {
       for (let i = 0; i < this.satellites.length; i++){
-        console.log(this.satellites.length)
         this.satellites[i].type.toLowerCase();
         satelliteType.toLowerCase();
           if(this.satellites[i].type === satelliteType){
